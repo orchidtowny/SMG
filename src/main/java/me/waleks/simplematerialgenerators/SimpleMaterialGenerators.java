@@ -1,45 +1,41 @@
 package me.waleks.simplematerialgenerators;
 
+import io.github.mooy1.infinitylib.core.AbstractAddon;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
+import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.java.JavaPluginLoader;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.io.File;
 
-public class SimpleMaterialGenerators extends JavaPlugin implements SlimefunAddon {
+public class SimpleMaterialGenerators extends AbstractAddon {
 
     private static SimpleMaterialGenerators instance;
 
+    public SimpleMaterialGenerators() {
+        super("Royale-MC", "SMG", "master", "options.auto-update");
+    }
+
+    public SimpleMaterialGenerators(JavaPluginLoader loader, PluginDescriptionFile description, File dataFolder, File file) {
+        super(loader, description, dataFolder, file,
+            "Royale-MC", "SMG", "master", "options.auto-update");
+    }
+
     @Override
-    public void onEnable() {
+    protected void enable() {
         setInstance(this);
 
-        Config cfg = new Config(this);
-
-        if (cfg.getBoolean("options.auto-update") && getDescription().getVersion().startsWith("DEV - ")) {
-            new GitHubBuildsUpdater(this, getFile(), "Sefiraat/SMG/master").start();
-        }
+//        Config cfg = new Config(this);
 
         SMGItemSetup.setup(this);
     }
 
     @Override
-    public void onDisable() {
+    protected void disable() {
         setInstance(null);
-    }
-
-    @Nonnull
-    @Override
-    public String getBugTrackerURL() {
-        return "https://github.com/Sefiraat/SMG/issues";
-    }
-
-    @Nonnull
-    @Override
-    public JavaPlugin getJavaPlugin() {
-        return this;
     }
 
     @Nonnull

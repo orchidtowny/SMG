@@ -15,17 +15,6 @@ public final class SMGItems {
         new CustomItemStack(Material.SMOOTH_STONE, "&9Simple Material Generators")
     );
 
-    public static final SlimefunItemStack SMG_GENERATOR_MULTIBLOCK = new SlimefunItemStack(
-        "SMG_GENERATOR_MULTIBLOCK",
-        Material.BEDROCK,
-        "&9Generator multiblock",
-        "",
-        "&dBuild any of this addon's",
-        "&dgenerators like this.",
-        "&aThey will only output to a chest",
-        "&adirectly above it."
-    );
-	
 	/*	Template for adding more generator items
 	public static final SlimefunItemStack SMG_GENERATOR_ = new SlimefunItemStack(
 		"SMG_GENERATOR_",
@@ -42,6 +31,33 @@ public final class SMGItems {
         Material.COBBLESTONE,
         "&7Cobblestone generator",
         "&6Rate: &e4 ticks",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_ADVANCED_COBBLESTONE = new SlimefunItemStack(
+        "SMG_GENERATOR_ADVANCED_COBBLESTONE",
+        Material.COBBLESTONE,
+        "&4Advanced &7Cobblestone Gen",
+        "&6Rate: &e4 ticks",
+        "&cQuantity: &e8",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_DIRT = new SlimefunItemStack(
+        "SMG_GENERATOR_DIRT",
+        Material.DIRT,
+        "&7Dirt generator",
+        "&6Rate: &e4 ticks",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+    public static final SlimefunItemStack SMG_GENERATOR_MUD = new SlimefunItemStack(
+        "SMG_GENERATOR_MUD",
+        Material.MUD,
+        "&7Mud generator",
+        "&6Rate: &e8 ticks",
         "",
         "&9&oSimpleMaterialGenerators"
     );
@@ -80,6 +96,78 @@ public final class SMGItems {
         "&6Rate: &e12 ticks",
         "",
         "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_DIORITE = new SlimefunItemStack(
+        "SMG_GENERATOR_DIORITE",
+        Material.DIORITE,
+        "&7Diorite generator",
+        "&6Rate: &e4 ticks",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_ANDESITE = new SlimefunItemStack(
+        "SMG_GENERATOR_ANDESITE",
+        Material.ANDESITE,
+        "&7Andesite generator",
+        "&6Rate: &e4 ticks",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_GRANITE = new SlimefunItemStack(
+        "SMG_GENERATOR_GRANITE",
+        Material.GRANITE,
+        "&7Granite generator",
+        "&6Rate: &e4 ticks",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_BLACKSTONE = new SlimefunItemStack(
+        "SMG_GENERATOR_BLACKSTONE",
+        Material.BLACKSTONE,
+        "&7Blackstone generator",
+        "&6Rate: &e4 ticks",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_DEEPSLATE = new SlimefunItemStack(
+        "SMG_GENERATOR_DEEPSLATE",
+        Material.COBBLED_DEEPSLATE,
+        "&7Cobbled deepslate generator",
+        "&6Rate: &e4 ticks",
+        "",
+        "&9&oSimpleMaterialsGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_CLAY_BROKEN = new SlimefunItemStack(
+        "SMG_GENERATOR_CLAY_BROKEN",
+        Material.CLAY,
+        "&7Clay generator &8(Broken)",
+        "&8Needs to be repaired",
+        "",
+        "&9&oSimpleMaterialsGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_CLAY = new SlimefunItemStack(
+        "SMG_GENERATOR_CLAY",
+        Material.CLAY,
+        "&7Clay generator",
+        "&6Rate: &e8 ticks",
+        "",
+        "&9&oSimpleMaterialsGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_TERRACOTTA = new SlimefunItemStack(
+        "SMG_GENERATOR_TERRACOTTA",
+        Material.TERRACOTTA,
+        "&7Terracotta generator",
+        "&6Rate: &e10 ticks",
+        "",
+        "&9&oSimpleMaterialsGenerators"
     );
 
     public static final SlimefunItemStack SMG_GENERATOR_GRAVEL_BROKEN = new SlimefunItemStack(
@@ -146,56 +234,149 @@ public final class SMGItems {
     );
 
     public static final SlimefunItemStack SMG_GENERATOR_REDSTONE_BADLY_FORMED = new SlimefunItemStack(
-            "SMG_GENERATOR_REDSTONE_BADLY_FORMED",
-            Material.REDSTONE_BLOCK,
-            "&cRedstone generator &8(Badly Formed)",
-            "&8Needs to be reformed",
-            "",
-            "&9&oSimpleMaterialGenerators"
+        "SMG_GENERATOR_REDSTONE_BADLY_FORMED",
+        Material.REDSTONE_BLOCK,
+        "&cRedstone generator &8(Badly Formed)",
+        "&8Needs to be reformed",
+        "",
+        "&9&oSimpleMaterialGenerators"
     );
 
     public static final SlimefunItemStack SMG_GENERATOR_REDSTONE_BROKEN = new SlimefunItemStack(
-            "SMG_GENERATOR_REDSTONE_BROKEN",
-            Material.REDSTONE_BLOCK,
-            "&cRedstone generator &8(Broken)",
-            "&8Needs to be repaired",
-            "",
-            "&9&oSimpleMaterialGenerators"
+        "SMG_GENERATOR_REDSTONE_BROKEN",
+        Material.REDSTONE_BLOCK,
+        "&cRedstone generator &8(Broken)",
+        "&8Needs to be repaired",
+        "",
+        "&9&oSimpleMaterialGenerators"
     );
 
     public static final SlimefunItemStack SMG_GENERATOR_REDSTONE = new SlimefunItemStack(
-            "SMG_GENERATOR_REDSTONE",
-            Material.REDSTONE_BLOCK,
-            "&cRedstone generator",
-            "&6Rate: &e24 ticks",
-            "",
-            "&9&oSimpleMaterialGenerators"
+        "SMG_GENERATOR_REDSTONE",
+        Material.REDSTONE_BLOCK,
+        "&cRedstone generator",
+        "&6Rate: &e24 ticks",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_DEEPSLATE_REDSTONE = new SlimefunItemStack(
+        "SMG_GENERATOR_DEEPSLATE_REDSTONE",
+        Material.REDSTONE_BLOCK,
+        "&cDeepslate redstone generator",
+        "&6Rate: &e24 ticks",
+        "&4Same as redstone generator but made with deepslate ore",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_LAPIS_BADLY_FORMED = new SlimefunItemStack(
+        "SMG_GENERATOR_LAPIS_BADLY_FORMED",
+        Material.LAPIS_BLOCK,
+        "&9Lapis generator &8(Badly formed)",
+        "&8Needs to be reformed",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_LAPIS_BROKEN = new SlimefunItemStack(
+        "SMG_GENERATOR_LAPIS_BROKEN",
+        Material.LAPIS_BLOCK,
+        "&9Lapis generator &8(Broken)",
+        "&8Needs to be repaired",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_LAPIS = new SlimefunItemStack(
+        "SMG_GENERATOR_LAPIS",
+        Material.LAPIS_BLOCK,
+        "&9Lapis generator",
+        "&6Rate: &e24 ticks",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_DEEPSLATE_LAPIS = new SlimefunItemStack(
+        "SMG_GENERATOR_DEEPSLATE_LAPIS",
+        Material.LAPIS_BLOCK,
+        "&9Deepslate lapis generator",
+        "&6Rate: &e24 ticks",
+        "&4Same as lapis generator but made with deepslate ore",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_COAL_BADLY_FORMED = new SlimefunItemStack(
+        "SMG_GENERATOR_COAL_BADLY_FORMED",
+        Material.COAL_BLOCK,
+        "&8Coal generator (Badly formed)",
+        "&8Needs to be reformed",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_COAL_BROKEN = new SlimefunItemStack(
+        "SMG_GENERATOR_COAL_BROKEN",
+        Material.COAL_BLOCK,
+        "&8Coal generator (Broken)",
+        "&8Needs to be repaired",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_COAL = new SlimefunItemStack(
+        "SMG_GENERATOR_COAL",
+        Material.COAL_BLOCK,
+        "&8Coal generator",
+        "&6Rate: &e24 ticks",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_DEEPSLATE_COAL = new SlimefunItemStack(
+        "SMG_GENERATOR_DEEPSLATE_COAL",
+        Material.COAL_BLOCK,
+        "&8Deepslate coal generator",
+        "&6Rate: &e24 ticks",
+        "&4Same as coal generator but made with deepslate ore",
+        "",
+        "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_AMETHYST = new SlimefunItemStack(
+        "SMG_GENERATOR_AMETHYST",
+        Material.AMETHYST_BLOCK,
+        "&dAmethyst generator",
+        "&6Rate: &e18 ticks",
+        "",
+        "&9&oSimpleMaterialGenerators"
     );
 
     public static final SlimefunItemStack SMG_GENERATOR_OBSIDIAN_BADLY_FORMED = new SlimefunItemStack(
-            "SMG_GENERATOR_OBSIDIAN_BADLY_FORMED",
-            Material.OBSIDIAN,
-            "&5Obsidian generator &8(Badly Formed)",
-            "&8Needs to be reformed",
-            "",
-            "&9&oSimpleMaterialGenerators"
+        "SMG_GENERATOR_OBSIDIAN_BADLY_FORMED",
+        Material.OBSIDIAN,
+        "&5Obsidian generator &8(Badly Formed)",
+        "&8Needs to be reformed",
+        "",
+        "&9&oSimpleMaterialGenerators"
     );
 
     public static final SlimefunItemStack SMG_GENERATOR_OBSIDIAN_BROKEN = new SlimefunItemStack(
-            "SMG_GENERATOR_OBSIDIAN_BROKEN",
-            Material.OBSIDIAN,
-            "&5Obsidian generator &8(Broken)",
-            "&8Needs to be repaired",
-            "",
-            "&9&oSimpleMaterialGenerators"
+        "SMG_GENERATOR_OBSIDIAN_BROKEN",
+        Material.OBSIDIAN,
+        "&5Obsidian generator &8(Broken)",
+        "&8Needs to be repaired",
+        "",
+        "&9&oSimpleMaterialGenerators"
     );
 
     public static final SlimefunItemStack SMG_GENERATOR_OBSIDIAN = new SlimefunItemStack(
-            "SMG_GENERATOR_OBSIDIAN",
-            Material.OBSIDIAN,
-            "&5Obsidian generator",
-            "&6Rate: &e128 ticks",
-            "",
-            "&9&oSimpleMaterialGenerators"
+        "SMG_GENERATOR_OBSIDIAN",
+        Material.OBSIDIAN,
+        "&5Obsidian generator",
+        "&6Rate: &e128 ticks",
+        "",
+        "&9&oSimpleMaterialGenerators"
     );
 }
