@@ -3,7 +3,8 @@ SimpleMaterialGenerators (SMG for short) is a SlimeFun4 addon that helps allevia
 
 ## What it adds
 It currently adds generators for:<br>
-Cobblestone, Stone, Smooth stone, Gravel, Sand, Glass, Netherrack and Soul sand<br>
+Cobblestone, Stone, Smooth Stone, Diorite, Granite, Andesite, Dirt, Gravel, Sand, Glass, Netherrack, & Soul Sand<br>
+There is an advanced tier of every generator that utilizes Supreme components if that plugin is on the server, else, core slimefun items<br>
 
 ## Using the generators
 The generators by themselves will do nothing - at least not until they have a chest (directly) above them.<br>
