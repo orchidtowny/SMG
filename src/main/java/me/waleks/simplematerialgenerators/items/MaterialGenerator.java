@@ -11,6 +11,7 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
+import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.Nonnull;
@@ -65,6 +66,13 @@ public class MaterialGenerator extends TickingMenuBlock implements RecipeDisplay
         }
 
         generatorProgress.put(pos, progress);
+    }
+
+    @Override
+    protected void onBreak(BlockBreakEvent e, BlockMenu menu) {
+        generatorProgress.remove(new BlockPosition(e.getBlock().getLocation()));
+        e.setDropItems(false);
+        e.getBlock().getWorld().dropItemNaturally(e.getBlock().getLocation(), this.getItem());
     }
 
     @Override

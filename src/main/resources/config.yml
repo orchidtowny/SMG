@@ -1,2 +1,4 @@
 options:
   auto-update: true
+crafting:
+  advanced_recipe_custom_id: "MACHINE_FRAME"

@@ -14,6 +14,7 @@ import java.io.File;
 public class SimpleMaterialGenerators extends AbstractAddon {
 
     private static SimpleMaterialGenerators instance;
+    private static Config config;
 
     public SimpleMaterialGenerators() {
         super("Royale-MC", "SMG", "master", "options.auto-update");
@@ -27,8 +28,6 @@ public class SimpleMaterialGenerators extends AbstractAddon {
     @Override
     protected void enable() {
         setInstance(this);
-
-//        Config cfg = new Config(this);
 
         SMGItemSetup.setup(this);
     }

@@ -16,7 +16,7 @@ public class Ores {
     public static void setup(@Nonnull SimpleMaterialGenerators plugin) {
 
         new BrokenGenerator(
-            SMGItems.SMG_ITEM_CATEGORY,
+            SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_REDSTONE_BADLY_FORMED,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
@@ -27,7 +27,7 @@ public class Ores {
             .register(plugin);
 
         new BrokenGenerator(
-            SMGItems.SMG_ITEM_CATEGORY,
+            SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_REDSTONE_BROKEN,
             RecipeType.ORE_CRUSHER,
             new ItemStack[]{
@@ -38,7 +38,7 @@ public class Ores {
             .register(plugin);
 
         new MaterialGenerator(
-            SMGItems.SMG_ITEM_CATEGORY,
+            SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_REDSTONE,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
@@ -50,7 +50,16 @@ public class Ores {
             .register(plugin);
 
         new MaterialGenerator(
-            SMGItems.SMG_ITEM_CATEGORY,
+            SMGItems.SMG_ITEM_ADVANCED_CATEGORY,
+            SMGItems.SMG_GENERATOR_ADVANCED_REDSTONE,
+            RecipeType.ENHANCED_CRAFTING_TABLE,
+            SMGItems.getAdvancedRecipe(SMGItems.SMG_GENERATOR_REDSTONE, "SUPREME_CORE_REDSTONE", "SUPREME_CORE_STONE", "SUPREME_CORE_REDSTONE"),
+            24, 8)
+            .setItem(Material.REDSTONE)
+            .register(plugin);
+
+        new MaterialGenerator(
+            SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_DEEPSLATE_REDSTONE,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
@@ -61,8 +70,17 @@ public class Ores {
             .setItem(Material.REDSTONE)
             .register(plugin);
 
+        new MaterialGenerator(
+            SMGItems.SMG_ITEM_ADVANCED_CATEGORY,
+            SMGItems.SMG_GENERATOR_ADVANCED_DEEPSLATE_REDSTONE,
+            RecipeType.ENHANCED_CRAFTING_TABLE,
+            SMGItems.getAdvancedRecipe(SMGItems.SMG_GENERATOR_DEEPSLATE_REDSTONE, "SUPREME_CORE_REDSTONE", "SUPREME_CORE_STONE", "SUPREME_CORE_REDSTONE"),
+            24, 8)
+            .setItem(Material.REDSTONE)
+            .register(plugin);
+
         new BrokenGenerator(
-            SMGItems.SMG_ITEM_CATEGORY,
+            SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_LAPIS_BADLY_FORMED,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
@@ -73,7 +91,7 @@ public class Ores {
             .register(plugin);
 
         new BrokenGenerator(
-            SMGItems.SMG_ITEM_CATEGORY,
+            SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_LAPIS_BROKEN,
             RecipeType.ORE_CRUSHER,
             new ItemStack[]{
@@ -84,7 +102,7 @@ public class Ores {
             .register(plugin);
 
         new MaterialGenerator(
-            SMGItems.SMG_ITEM_CATEGORY,
+            SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_LAPIS,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
@@ -96,7 +114,16 @@ public class Ores {
             .register(plugin);
 
         new MaterialGenerator(
-            SMGItems.SMG_ITEM_CATEGORY,
+            SMGItems.SMG_ITEM_ADVANCED_CATEGORY,
+            SMGItems.SMG_GENERATOR_ADVANCED_LAPIS,
+            RecipeType.ENHANCED_CRAFTING_TABLE,
+            SMGItems.getAdvancedRecipe(SMGItems.SMG_GENERATOR_LAPIS, "SUPREME_CORE_LAPIS", "SUPREME_CORE_STONE", "SUPREME_CORE_LAPIS"),
+            24, 8)
+            .setItem(Material.LAPIS_LAZULI)
+            .register(plugin);
+
+        new MaterialGenerator(
+            SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_DEEPSLATE_LAPIS,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
@@ -107,8 +134,17 @@ public class Ores {
             .setItem(Material.LAPIS_LAZULI)
             .register(plugin);
 
+        new MaterialGenerator(
+            SMGItems.SMG_ITEM_ADVANCED_CATEGORY,
+            SMGItems.SMG_GENERATOR_ADVANCED_DEEPSLATE_LAPIS,
+            RecipeType.ENHANCED_CRAFTING_TABLE,
+            SMGItems.getAdvancedRecipe(SMGItems.SMG_GENERATOR_DEEPSLATE_LAPIS, "SUPREME_CORE_LAPIS", "SUPREME_CORE_STONE", "SUPREME_CORE_LAPIS"),
+            24, 8)
+            .setItem(Material.LAPIS_LAZULI)
+            .register(plugin);
+
         new BrokenGenerator(
-            SMGItems.SMG_ITEM_CATEGORY,
+            SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_COAL_BADLY_FORMED,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
@@ -119,7 +155,7 @@ public class Ores {
             .register(plugin);
 
         new BrokenGenerator(
-            SMGItems.SMG_ITEM_CATEGORY,
+            SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_COAL_BROKEN,
             RecipeType.ORE_CRUSHER,
             new ItemStack[]{
@@ -130,7 +166,7 @@ public class Ores {
             .register(plugin);
 
         new MaterialGenerator(
-            SMGItems.SMG_ITEM_CATEGORY,
+            SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_COAL,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
@@ -142,7 +178,16 @@ public class Ores {
             .register(plugin);
 
         new MaterialGenerator(
-            SMGItems.SMG_ITEM_CATEGORY,
+            SMGItems.SMG_ITEM_ADVANCED_CATEGORY,
+            SMGItems.SMG_GENERATOR_ADVANCED_COAL,
+            RecipeType.ENHANCED_CRAFTING_TABLE,
+            SMGItems.getAdvancedRecipe(SMGItems.SMG_GENERATOR_COAL, "SUPREME_CORE_COAL", "SUPREME_CORE_STONE", "SUPREME_CORE_COAL"),
+            24, 8)
+            .setItem(Material.COAL)
+            .register(plugin);
+
+        new MaterialGenerator(
+            SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_DEEPSLATE_COAL,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
@@ -154,7 +199,16 @@ public class Ores {
             .register(plugin);
 
         new MaterialGenerator(
-            SMGItems.SMG_ITEM_CATEGORY,
+            SMGItems.SMG_ITEM_ADVANCED_CATEGORY,
+            SMGItems.SMG_GENERATOR_ADVANCED_DEEPSLATE_COAL,
+            RecipeType.ENHANCED_CRAFTING_TABLE,
+            SMGItems.getAdvancedRecipe(SMGItems.SMG_GENERATOR_DEEPSLATE_COAL, "SUPREME_CORE_COAL", "SUPREME_CORE_STONE", "SUPREME_CORE_COAL"),
+            24, 8)
+            .setItem(Material.COAL)
+            .register(plugin);
+
+        new MaterialGenerator(
+            SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_AMETHYST,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             new ItemStack[]{
@@ -162,6 +216,15 @@ public class Ores {
                 null, null, null,
                 null, null, null
             }, 18)
+            .setItem(Material.AMETHYST_BLOCK)
+            .register(plugin);
+
+        new MaterialGenerator(
+            SMGItems.SMG_ITEM_ADVANCED_CATEGORY,
+            SMGItems.SMG_GENERATOR_ADVANCED_AMETHYST,
+            RecipeType.ENHANCED_CRAFTING_TABLE,
+            SMGItems.getAdvancedRecipe(SMGItems.SMG_GENERATOR_AMETHYST, "SUPREME_CORE_QUARTZ", "SUPREME_CORE_DIAMOND", "SUPREME_CORE_QUARTZ"),
+            18, 8)
             .setItem(Material.AMETHYST_BLOCK)
             .register(plugin);
 

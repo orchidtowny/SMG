@@ -26,3 +26,7 @@ api-version: 1.16
 ## This is required and marks Slimefun as a plugin dependency.
 depend:
 - Slimefun
+
+softdepend:
+  - Supreme
+  - SlimeCustomizer
