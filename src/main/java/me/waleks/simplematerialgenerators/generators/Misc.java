@@ -138,7 +138,7 @@ public class Misc {
             SMGItems.SMG_ITEM_ADVANCED_CATEGORY,
             SMGItems.SMG_GENERATOR_ADVANCED_SOUL_SAND,
             RecipeType.ENHANCED_CRAFTING_TABLE,
-            SMGItems.getAdvancedRecipe(SMGItems.SMG_GENERATOR_SAND, "SUPREME_CORE_SAND", "SUPREME_CORE_TEAR", "SUPREME_CORE_SAND"),
+            SMGItems.getAdvancedRecipe(SMGItems.SMG_GENERATOR_SOUL_SAND, "SUPREME_CORE_SAND", "SUPREME_CORE_TEAR", "SUPREME_CORE_SAND"),
             8, 8)
             .setItem(Material.SOUL_SAND)
             .register(plugin);
