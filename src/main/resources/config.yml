@@ -1,4 +1,5 @@
 options:
   auto-update: true
+  drop-contents-on-break: true
 crafting:
   advanced_recipe_custom_id: "MACHINE_FRAME"

@@ -8,6 +8,8 @@ import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.blocks.BlockPosition;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
+import me.waleks.simplematerialgenerators.SMGItems;
+import me.waleks.simplematerialgenerators.SimpleMaterialGenerators;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
@@ -24,7 +26,7 @@ import java.util.Map;
 public class MaterialGenerator extends TickingMenuBlock implements RecipeDisplayItem {
 
     private static final Map<BlockPosition, Integer> generatorProgress = new HashMap<>();
-    private static final int[] OUTPUT_SLOTS = { 10, 11, 12, 13, 14, 15, 16, 17 };
+    private static final int[] OUTPUT_SLOTS = { 10, 11, 12, 13, 14, 15, 16 };
 
     private final int rate;
     private final int quantity;
@@ -73,6 +75,10 @@ public class MaterialGenerator extends TickingMenuBlock implements RecipeDisplay
         generatorProgress.remove(new BlockPosition(e.getBlock().getLocation()));
         e.setDropItems(false);
         e.getBlock().getWorld().dropItemNaturally(e.getBlock().getLocation(), this.getItem());
+
+        if (SimpleMaterialGenerators.getInstance().getConfig().getBoolean("options.drop-contents-on-break")) {
+            menu.dropItems(e.getBlock().getLocation(), OUTPUT_SLOTS);
+        }
     }
 
     @Override
