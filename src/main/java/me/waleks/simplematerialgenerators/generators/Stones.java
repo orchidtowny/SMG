@@ -67,7 +67,7 @@ public class Stones {
             RecipeType.ENHANCED_CRAFTING_TABLE,
             SMGItems.getAdvancedRecipe(SMGItems.SMG_GENERATOR_STONE, "SUPREME_CORE_STONE", "SUPREME_CORE_COAL", "SUPREME_CORE_STONE"),
             4, 8)
-            .setItem(Material.COBBLESTONE)
+            .setItem(Material.STONE)
             .register(plugin);
 
         new BrokenGenerator(

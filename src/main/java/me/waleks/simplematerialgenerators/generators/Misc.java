@@ -172,7 +172,8 @@ public class Misc {
                 new ItemStack(Material.WATER_BUCKET), SMGItems.SMG_GENERATOR_DIRT, new ItemStack(Material.WATER_BUCKET),
                 new ItemStack(Material.WATER_BUCKET), SMGItems.SMG_GENERATOR_DIRT, new ItemStack(Material.WATER_BUCKET),
                 new ItemStack(Material.WATER_BUCKET), SMGItems.SMG_GENERATOR_DIRT, new ItemStack(Material.WATER_BUCKET)
-            }, 4).setItem(Material.MUD)
+            }, 4)
+            .setItem(Material.MUD)
             .register(plugin);
 
         new MaterialGenerator(
