@@ -1,3 +1,7 @@
+# Orchid's Fork
+
+- Bumps Slimefun4 API version from RC-28 to RC-29
+
 # Info
 SimpleMaterialGenerators (SMG for short) is a SlimeFun4 addon that helps alleviate some of the grind by providing simple generators that create simple materials.<br>
 
