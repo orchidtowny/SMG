@@ -8,12 +8,11 @@ import me.waleks.simplematerialgenerators.items.BrokenGenerator;
 import me.waleks.simplematerialgenerators.items.MaterialGenerator;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
-
-import javax.annotation.Nonnull;
+import org.jetbrains.annotations.NotNull;
 
 public class Ores {
 
-    public static void setup(@Nonnull SimpleMaterialGenerators plugin) {
+    public static void setup(@NotNull SimpleMaterialGenerators plugin) {
 
         new BrokenGenerator(
             SMGItems.SMG_ITEM_BASIC_CATEGORY,
@@ -228,5 +227,6 @@ public class Ores {
             .setItem(Material.AMETHYST_BLOCK)
             .register(plugin);
 
+        // todo: quartz
     }
 }

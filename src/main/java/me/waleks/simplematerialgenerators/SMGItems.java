@@ -10,6 +10,9 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.Objects;
 
 public final class SMGItems {
 
@@ -283,7 +286,7 @@ public final class SMGItems {
         "SMG_GENERATOR_TERRACOTTA",
         Material.TERRACOTTA,
         "&7Terracotta generator",
-        "&6Rate: &e10 ticks",
+        "&6Rate: &e4 ticks",
         "",
         "&9&oSimpleMaterialsGenerators"
     );
@@ -292,7 +295,7 @@ public final class SMGItems {
         "SMG_GENERATOR_ADVANCED_TERRACOTTA",
         Material.TERRACOTTA,
         "&9Advanced &7Terracotta Gen",
-        "&6Rate: &e10 ticks",
+        "&6Rate: &e4 ticks",
         "&cQuantity: &e8",
         "",
         "&9&oSimpleMaterialsGenerators"
@@ -643,7 +646,7 @@ public final class SMGItems {
     );
 
     public static ItemStack[] getAdvancedRecipe(SlimefunItemStack basic, String id1, String id2, String id3) {
-        String id4 = SimpleMaterialGenerators.getInstance().getConfig().getString("crafting.advanced_recipe_custom_id");
+        @NotNull String id4 = Objects.requireNonNull(SimpleMaterialGenerators.getInstance().getConfig().getString("crafting.advanced_recipe_custom_id"));
 
         SlimefunItem sfItem1 = SlimefunItem.getById(id1);
         ItemStack customItem1;

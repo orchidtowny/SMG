@@ -1,13 +1,11 @@
 package me.waleks.simplematerialgenerators;
 
 import io.github.mooy1.infinitylib.core.AbstractAddon;
-import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import org.bukkit.plugin.PluginDescriptionFile;
-import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.plugin.java.JavaPluginLoader;
+import org.jetbrains.annotations.NotNull;
 
-import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.io.File;
 
@@ -17,12 +15,12 @@ public class SimpleMaterialGenerators extends AbstractAddon {
     private static Config config;
 
     public SimpleMaterialGenerators() {
-        super("Royale-MC", "SMG", "master", "options.auto-update");
+        super("orchidtowny", "SMG", "master", "options.auto-update");
     }
 
     public SimpleMaterialGenerators(JavaPluginLoader loader, PluginDescriptionFile description, File dataFolder, File file) {
         super(loader, description, dataFolder, file,
-            "Royale-MC", "SMG", "master", "options.auto-update");
+            "orchidtowny", "SMG", "master", "options.auto-update");
     }
 
     @Override
@@ -37,7 +35,7 @@ public class SimpleMaterialGenerators extends AbstractAddon {
         setInstance(null);
     }
 
-    @Nonnull
+    @NotNull
     public static SimpleMaterialGenerators getInstance() {
         return instance;
     }

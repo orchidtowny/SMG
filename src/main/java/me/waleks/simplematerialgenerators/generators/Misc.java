@@ -1,6 +1,5 @@
 package me.waleks.simplematerialgenerators.generators;
 
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import me.waleks.simplematerialgenerators.SMGItems;
@@ -9,12 +8,11 @@ import me.waleks.simplematerialgenerators.items.BrokenGenerator;
 import me.waleks.simplematerialgenerators.items.MaterialGenerator;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
-
-import javax.annotation.Nonnull;
+import org.jetbrains.annotations.NotNull;
 
 public class Misc {
 
-    public static void setup(@Nonnull SimpleMaterialGenerators plugin) {
+    public static void setup(@NotNull SimpleMaterialGenerators plugin) {
 
         new BrokenGenerator(
             SMGItems.SMG_ITEM_BASIC_CATEGORY,
@@ -185,6 +183,8 @@ public class Misc {
             .setItem(Material.MUD)
             .register(plugin);
 
+        // todo: packed mud
+
         new BrokenGenerator(
             SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_CLAY_BROKEN,
@@ -224,7 +224,7 @@ public class Misc {
                 SMGItems.SMG_GENERATOR_CLAY, new ItemStack(Material.TERRACOTTA), SMGItems.SMG_GENERATOR_CLAY,
                 new ItemStack(Material.TERRACOTTA), new ItemStack(Material.LAVA_BUCKET), new ItemStack(Material.TERRACOTTA),
                 SMGItems.SMG_GENERATOR_CLAY, new ItemStack(Material.TERRACOTTA), SMGItems.SMG_GENERATOR_CLAY
-            }, 10)
+            }, 4)
             .setItem(Material.TERRACOTTA)
             .register(plugin);
 
@@ -233,9 +233,11 @@ public class Misc {
             SMGItems.SMG_GENERATOR_ADVANCED_TERRACOTTA,
             RecipeType.ENHANCED_CRAFTING_TABLE,
             SMGItems.getAdvancedRecipe(SMGItems.SMG_GENERATOR_TERRACOTTA, "SUPREME_CORE_CLAY", "SUPREME_CORE_COAL", "SUPREME_CORE_CLAY"),
-            10, 8)
+            4, 8)
             .setItem(Material.TERRACOTTA)
             .register(plugin);
+
+        // todo: concrete
 
         new BrokenGenerator(
             SMGItems.SMG_ITEM_BASIC_CATEGORY,

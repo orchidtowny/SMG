@@ -15,8 +15,8 @@ import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.inventory.ItemStack;
+import org.jetbrains.annotations.NotNull;
 
-import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -44,7 +44,7 @@ public class MaterialGenerator extends TickingMenuBlock implements RecipeDisplay
         this(itemGroup, item, recipeType, recipe, rate, 1);
     }
 
-    public final MaterialGenerator setItem(@Nonnull Material material) {
+    public final MaterialGenerator setItem(@NotNull Material material) {
         this.material = material;
         return this;
     }
@@ -82,7 +82,7 @@ public class MaterialGenerator extends TickingMenuBlock implements RecipeDisplay
     }
 
     @Override
-    protected void setup(@Nonnull BlockMenuPreset blockMenuPreset) {
+    protected void setup(@NotNull BlockMenuPreset blockMenuPreset) {
         blockMenuPreset.drawBackground(new int[] {
             0, 1, 2, 3, 4, 5, 6, 7, 8,
             9, 17,
@@ -100,7 +100,7 @@ public class MaterialGenerator extends TickingMenuBlock implements RecipeDisplay
         return OUTPUT_SLOTS;
     }
 
-    @Nonnull
+    @NotNull
     @Override
     public List<ItemStack> getDisplayRecipes() {
         List<ItemStack> items = new ArrayList<>();
@@ -109,15 +109,15 @@ public class MaterialGenerator extends TickingMenuBlock implements RecipeDisplay
         return items;
     }
 
-    @Nonnull
+    @NotNull
     @Override
     public String getLabelLocalPath() {
         return RecipeDisplayItem.super.getLabelLocalPath();
     }
 
-    @Nonnull
+    @NotNull
     @Override
-    public String getRecipeSectionLabel(@Nonnull Player p) {
+    public String getRecipeSectionLabel(@NotNull Player p) {
         return "&7Generates";
     }
 }

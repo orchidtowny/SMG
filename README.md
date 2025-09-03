@@ -1,6 +1,17 @@
 # Orchid's Fork
 
+- Bumps required Java version to 17
 - Bumps Slimefun4 API version from RC-28 to RC-29
+- Improved null safety
+- Terracotta gen ticks reduced from 10 to 4
+- Migrated to Gradle & improved dev env
+
+## Todo
+- Add quartz gen (tick rate of 8)
+- Add copper ingot gen (tick rate of 8)
+- Add deepslate gen (tick rate of 8)
+- Add packed mud gen (tick rate of 4)
+- Add concrete gen (tick rate of 4)
 
 # Info
 SimpleMaterialGenerators (SMG for short) is a SlimeFun4 addon that helps alleviate some of the grind by providing simple generators that create simple materials.<br>

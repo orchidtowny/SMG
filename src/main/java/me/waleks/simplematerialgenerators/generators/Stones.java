@@ -1,7 +1,5 @@
 package me.waleks.simplematerialgenerators.generators;
 
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import me.waleks.simplematerialgenerators.SMGItems;
@@ -10,12 +8,11 @@ import me.waleks.simplematerialgenerators.items.BrokenGenerator;
 import me.waleks.simplematerialgenerators.items.MaterialGenerator;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
-
-import javax.annotation.Nonnull;
+import org.jetbrains.annotations.NotNull;
 
 public class Stones {
 
-    public static void setup(@Nonnull SimpleMaterialGenerators plugin) {
+    public static void setup(@NotNull SimpleMaterialGenerators plugin) {
 
         new MaterialGenerator(
             SMGItems.SMG_ITEM_BASIC_CATEGORY,
