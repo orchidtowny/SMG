@@ -5,6 +5,7 @@
 - Improved null safety
 - Terracotta gen ticks reduced from 10 to 4
 - Migrated to Gradle & improved dev env
+- Auto-update disabled by default in config
 
 ## Todo
 - Add quartz gen (tick rate of 8)
