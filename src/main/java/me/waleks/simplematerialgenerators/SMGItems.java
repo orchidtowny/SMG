@@ -10,6 +10,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
@@ -95,8 +96,8 @@ public final class SMGItems {
 
     public static final SlimefunItemStack SMG_GENERATOR_ADVANCED_MUD = new SlimefunItemStack(
         "SMG_GENERATOR_ADVANCED_MUD",
-        Material.MUD,
-        "&9Advanced &7Mud Gen",
+        Material.PACKED_MUD,
+        "&9Advanced &7Packed Mud Gen",
         "&6Rate: &e8 ticks",
         "&cQuantity: &e8",
         "",
@@ -608,25 +609,6 @@ public final class SMGItems {
         "&9&oSimpleMaterialGenerators"
     );
 
-    public static final SlimefunItemStack SMG_GENERATOR_QUARTZ = new SlimefunItemStack(
-            "SMG_GENERATOR_QUARTZ",
-            Material.QUARTZ_BLOCK,
-            "&fQuartz Gen",
-            "&6Rate: &e8 ticks",
-            "",
-            "&9&oSimpleMaterialGenerators"
-    );
-
-    public static final SlimefunItemStack SMG_GENERATOR_ADVANCED_QUARTZ = new SlimefunItemStack(
-            "SMG_GENERATOR_ADVANCED_QUARTZ",
-            Material.QUARTZ_BLOCK,
-            "&9Advanced &fQuartz Gen",
-            "&6Rate: &e8 ticks",
-            "&cQuantity: &e8",
-            "",
-            "&9&oSimpleMaterialGenerators"
-    );
-
     public static final SlimefunItemStack SMG_GENERATOR_OBSIDIAN_BADLY_FORMED = new SlimefunItemStack(
         "SMG_GENERATOR_OBSIDIAN_BADLY_FORMED",
         Material.OBSIDIAN,
@@ -664,7 +646,67 @@ public final class SMGItems {
         "&9&oSimpleMaterialGenerators"
     );
 
-    public static ItemStack[] getAdvancedRecipe(SlimefunItemStack basic, String id1, String id2, String id3) {
+    // quartz
+
+    public static final SlimefunItemStack SMG_GENERATOR_QUARTZ = new SlimefunItemStack(
+            "SMG_GENERATOR_QUARTZ",
+            Material.QUARTZ_BLOCK,
+            "&fQuartz Gen",
+            "&6Rate: &e8 ticks",
+            "",
+            "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_ADVANCED_QUARTZ = new SlimefunItemStack(
+            "SMG_GENERATOR_ADVANCED_QUARTZ",
+            Material.QUARTZ_BLOCK,
+            "&9Advanced &fQuartz Gen",
+            "&6Rate: &e8 ticks",
+            "&cQuantity: &e8",
+            "",
+            "&9&oSimpleMaterialGenerators"
+    );
+
+    // copper
+
+    public static final SlimefunItemStack SMG_GENERATOR_COPPER_BADLY_FORMED = new SlimefunItemStack(
+            "SMG_GENERATOR_COPPER_BADLY_FORMED",
+            Material.COPPER_BLOCK,
+            "&6Copper generator &8(Badly Formed)",
+            "&8Needs to be reformed",
+            "",
+            "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_COPPER_BROKEN = new SlimefunItemStack(
+            "SMG_GENERATOR_COPPER_BROKEN",
+            Material.COPPER_BLOCK,
+            "&6Copper generator &8(Broken)",
+            "&8Needs to be repaired",
+            "",
+            "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_COPPER = new SlimefunItemStack(
+            "SMG_GENERATOR_COPPER",
+            Material.COPPER_BLOCK,
+            "&6Copper generator",
+            "&6Rate: &e8 ticks",
+            "",
+            "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_ADVANCED_COPPER = new SlimefunItemStack(
+            "SMG_GENERATOR_ADVANCED_COPPER",
+            Material.COPPER_BLOCK,
+            "&9Advanced &6Copper Gen",
+            "&6Rate: &e8 ticks",
+            "&cQuantity: &e8",
+            "",
+            "&9&oSimpleMaterialGenerators"
+    );
+
+    public static ItemStack @NotNull [] getAdvancedRecipe(SlimefunItemStack basic, String id1, String id2, String id3) {
         @NotNull String id4 = Objects.requireNonNull(SimpleMaterialGenerators.getInstance().getConfig().getString("crafting.advanced_recipe_custom_id"));
 
         SlimefunItem sfItem1 = SlimefunItem.getById(id1);

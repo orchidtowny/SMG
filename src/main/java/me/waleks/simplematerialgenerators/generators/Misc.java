@@ -162,29 +162,6 @@ public class Misc {
             .setItem(Material.DIRT)
             .register(plugin);
 
-        new MaterialGenerator(
-            SMGItems.SMG_ITEM_BASIC_CATEGORY,
-            SMGItems.SMG_GENERATOR_MUD,
-            RecipeType.ENHANCED_CRAFTING_TABLE,
-            new ItemStack[]{
-                new ItemStack(Material.WATER_BUCKET), SMGItems.SMG_GENERATOR_DIRT, new ItemStack(Material.WATER_BUCKET),
-                new ItemStack(Material.WATER_BUCKET), SMGItems.SMG_GENERATOR_DIRT, new ItemStack(Material.WATER_BUCKET),
-                new ItemStack(Material.WATER_BUCKET), SMGItems.SMG_GENERATOR_DIRT, new ItemStack(Material.WATER_BUCKET)
-            }, 4)
-            .setItem(Material.MUD)
-            .register(plugin);
-
-        new MaterialGenerator(
-            SMGItems.SMG_ITEM_ADVANCED_CATEGORY,
-            SMGItems.SMG_GENERATOR_ADVANCED_MUD,
-            RecipeType.ENHANCED_CRAFTING_TABLE,
-            SMGItems.getAdvancedRecipe(SMGItems.SMG_GENERATOR_MUD, "SUPREME_CORE_WHEAT", "SUPREME_CORE_STRING", "SUPREME_CORE_WHEAT"),
-            4, 8)
-            .setItem(Material.MUD)
-            .register(plugin);
-
-        // todo: packed mud
-
         new BrokenGenerator(
             SMGItems.SMG_ITEM_BASIC_CATEGORY,
             SMGItems.SMG_GENERATOR_CLAY_BROKEN,

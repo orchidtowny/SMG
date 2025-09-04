@@ -226,27 +226,5 @@ public class Ores {
             18, 8)
             .setItem(Material.AMETHYST_BLOCK)
             .register(plugin);
-
-        // todo: quartz
-        new MaterialGenerator(
-                SMGItems.SMG_ITEM_BASIC_CATEGORY,
-                SMGItems.SMG_GENERATOR_QUARTZ,
-                RecipeType.ENHANCED_CRAFTING_TABLE,
-                new ItemStack[]{
-                        SMGItems.SMG_GENERATOR_NETHERRACK, new ItemStack(Material.QUARTZ), SMGItems.SMG_GENERATOR_NETHERRACK,
-                        new ItemStack(Material.QUARTZ), new ItemStack(Material.DIAMOND), new ItemStack(Material.QUARTZ),
-                        SMGItems.SMG_GENERATOR_NETHERRACK, new ItemStack(Material.QUARTZ), SMGItems.SMG_GENERATOR_NETHERRACK,
-                }, 8)
-                .setItem(Material.QUARTZ)
-                .register(plugin);
-
-        new MaterialGenerator(
-                SMGItems.SMG_ITEM_ADVANCED_CATEGORY,
-                SMGItems.SMG_GENERATOR_ADVANCED_QUARTZ,
-                RecipeType.ENHANCED_CRAFTING_TABLE,
-                SMGItems.getAdvancedRecipe(SMGItems.SMG_GENERATOR_QUARTZ, "SUPREME_CORE_QUARTZ", "SUPREME_CORE_DIAMOND", "SUPREME_CORE_QUARTZ"),
-                18, 8)
-                .setItem(Material.QUARTZ)
-                .register(plugin);
     }
 }

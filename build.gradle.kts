@@ -27,7 +27,7 @@ dependencies {
 }
 
 group = "me.waleks"
-version = "2.3.0+orchid"
+version = "2.5.0+orchid"
 description = "SimpleMaterialGenerators"
 java.sourceCompatibility = JavaVersion.VERSION_17
 

@@ -7,11 +7,11 @@
 - Migrated to Gradle & improved dev env
 - Auto-update disabled by default in config
 - Add quartz & advanced quartz gen (tick rate of 8)
+- Add copper ingot & advanced copper ingot gen (tick rate of 8)
+- Add packed mud gen (tick rate of 4)
 
 ## Todo
-- Add copper ingot gen (tick rate of 8)
 - Add deepslate gen (tick rate of 8)
-- Add packed mud gen (tick rate of 4)
 - Add concrete gen (tick rate of 4)
 
 # Info

@@ -1,8 +1,6 @@
 package me.waleks.simplematerialgenerators;
 
-import me.waleks.simplematerialgenerators.generators.Misc;
-import me.waleks.simplematerialgenerators.generators.Ores;
-import me.waleks.simplematerialgenerators.generators.Stones;
+import me.waleks.simplematerialgenerators.generators.*;
 import org.jetbrains.annotations.NotNull;
 
 public final class SMGItemSetup {
@@ -25,8 +23,11 @@ public final class SMGItemSetup {
 		.register(plugin);
 		*/
 
+        Copper.setup(plugin);
+        Misc.setup(plugin);
+        Mud.setup(plugin);
         Stones.setup(plugin);
         Ores.setup(plugin);
-        Misc.setup(plugin);
+        Quartz.setup(plugin);
     }
 }
