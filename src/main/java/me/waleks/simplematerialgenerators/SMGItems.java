@@ -608,6 +608,25 @@ public final class SMGItems {
         "&9&oSimpleMaterialGenerators"
     );
 
+    public static final SlimefunItemStack SMG_GENERATOR_QUARTZ = new SlimefunItemStack(
+            "SMG_GENERATOR_QUARTZ",
+            Material.QUARTZ_BLOCK,
+            "&fQuartz Gen",
+            "&6Rate: &e8 ticks",
+            "",
+            "&9&oSimpleMaterialGenerators"
+    );
+
+    public static final SlimefunItemStack SMG_GENERATOR_ADVANCED_QUARTZ = new SlimefunItemStack(
+            "SMG_GENERATOR_ADVANCED_QUARTZ",
+            Material.QUARTZ_BLOCK,
+            "&9Advanced &fQuartz Gen",
+            "&6Rate: &e8 ticks",
+            "&cQuantity: &e8",
+            "",
+            "&9&oSimpleMaterialGenerators"
+    );
+
     public static final SlimefunItemStack SMG_GENERATOR_OBSIDIAN_BADLY_FORMED = new SlimefunItemStack(
         "SMG_GENERATOR_OBSIDIAN_BADLY_FORMED",
         Material.OBSIDIAN,

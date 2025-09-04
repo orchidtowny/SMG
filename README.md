@@ -1,4 +1,4 @@
-# Orchid's Fork
+# Orchid Simple Material Generators
 
 - Bumps required Java version to 17
 - Bumps Slimefun4 API version from RC-28 to RC-29
@@ -6,9 +6,9 @@
 - Terracotta gen ticks reduced from 10 to 4
 - Migrated to Gradle & improved dev env
 - Auto-update disabled by default in config
+- Add quartz & advanced quartz gen (tick rate of 8)
 
 ## Todo
-- Add quartz gen (tick rate of 8)
 - Add copper ingot gen (tick rate of 8)
 - Add deepslate gen (tick rate of 8)
 - Add packed mud gen (tick rate of 4)
